@@ -1,0 +1,80 @@
+*,
+html {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  font-size: 62.5%;
+}
+
+body {
+  color: royalblue;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main > h1 {
+  background-color: cornsilk;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-size: 3.5rem;
+}
+
+#words {
+  margin-bottom: 20px;
+  min-height: 350px;
+}
+
+#words > section {
+  padding: 10px;
+  margin: 5px;
+}
+
+#words > section > h2 {
+  font-size: 2.8rem;
+}
+
+#words > section > p {
+  font-size: 2rem;
+}
+
+.main > .btn {
+  width: 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.main > .btn > button {
+  margin: 5px;
+  padding: 20px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 2rem;
+  border: 1px solid royalblue;
+}
+
+.main > .btn > button:focus {
+  outline: none;
+}
+
+.main > .btn > #generate-btn {
+  width: 70%;
+}
+
+.main > .btn > #generate-btn:hover {
+  background-color: lightblue;
+}
+
+.main > .btn > #copy {
+  width: 30%;
+}
+
+.main > .btn > #copy:hover {
+  background-color: lightgreen;
+}
