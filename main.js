@@ -5,7 +5,7 @@ function getElemId(id) {
 const wordsDisplay = getElemId('words');
 const generateBtn = getElemId('generate-btn');
 const copyBtn = getElemId('copy');
-const savedWords = [];
+let savedWords = [];
 function generateRand(end) {
   return Math.floor(Math.random() * end);
 }
@@ -45,8 +45,10 @@ function saveWord(e) {
     e.target.textContent = 'saved';
     savedWords.push(wordObject);
   } 
-  
-  console.log(savedWords)
+  if (exists) {
+    savedWords = savedWords.filter(e => e.word !== wordObject.word)
+    e.target.textContent = 'save';
+  }
 }
 
 function getWords() {
@@ -56,7 +58,6 @@ function getWords() {
 
   for (let i = 0; i < 3 - savedWords.length; i++) {
     newWords.push(data[generateRand(len)])
-    console.log(newWords);
   }
 
   const wordsToDisplay = savedWords.concat(newWords)
