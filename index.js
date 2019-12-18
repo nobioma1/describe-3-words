@@ -180,11 +180,24 @@ const data = [
   },
   {
     word: 'Empathethic',
-    meaning: 'He shows the ability to understand and share the feelings of another person'
+    meaning:
+      'He shows the ability to understand and share the feelings of another person'
   },
   {
     word: 'Frank',
     meaning: 'She is open and direct in speech or in writing'
+  },
+  {
+    word: 'Friendly',
+    meaning: 'He is kind and pleasant'
+  },
+  {
+    word: 'Gentle',
+    meaning: 'She has/shows a mild, kind, or tender temperament or character.'
+  },
+  {
+    word: 'Optimistic',
+    meaning: 'He is hopeful and confident about the future.'
   }
 ];
 
