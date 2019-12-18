@@ -31,36 +31,45 @@ function createWord({ word, meaning }) {
 }
 
 function saveWord(e) {
+  // create word object from the selected DOM element
   let wordObject = {
     word: e.target.previousSibling.previousSibling.textContent,
     meaning: e.target.previousSibling.textContent
   }
+
+  // check if the word has been saved
   let exists  = false;
   savedWords.forEach(e => {
     if (e.word === wordObject.word) {
       exists = true;
     };
   })
-  if (!exists && savedWords.length < 3) {
-    e.target.textContent = 'saved';
-    savedWords.push(wordObject);
-  } 
+
+  // if the word has been saved, unsave it
   if (exists) {
     savedWords = savedWords.filter(e => e.word !== wordObject.word)
     e.target.textContent = 'save';
   }
+
+  // if the word has not been saved and 
+  // there is available space, save it 
+  if (!exists && savedWords.length < 3) {
+    e.target.textContent = 'saved';
+    savedWords.push(wordObject);
+  } 
 }
 
 function getWords() {
   const len = data.length;
-
   const newWords = []
+  const wordsToGenerate = 3 - savedWords.length;
 
-  for (let i = 0; i < 3 - savedWords.length; i++) {
+  for (let i = 0; i < wordsToGenerate; i++) {
     newWords.push(data[generateRand(len)])
   }
 
   const wordsToDisplay = savedWords.concat(newWords)
+  
   wordsDisplay.innerHTML = '';
   wordsToDisplay.forEach(word => {
     const newWord = createWord(word);
