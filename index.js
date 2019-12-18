@@ -170,8 +170,22 @@ const data = [
   { word: 'Courageous', meaning: ' She’s brave.' },
   { word: 'Fearless', meaning: ' She has no fear.' },
   { word: 'Clever', meaning: ' He is quick to learn and understand' },
-  { word: 'Lazy', meaning: 'She is unwilling to work or she always avoids work' },
-  { word: 'Shy', meaning: 'She is nervous, timid when in the company of other people' },
+  {
+    word: 'Lazy',
+    meaning: 'She is unwilling to work or she always avoids work'
+  },
+  {
+    word: 'Shy',
+    meaning: 'She is nervous, timid when in the company of other people'
+  },
+  {
+    word: 'Empathethic',
+    meaning: 'He shows the ability to understand and share the feelings of another person'
+  },
+  {
+    word: 'Frank',
+    meaning: 'She is open and direct in speech or in writing'
+  }
 ];
 
 const sorted = data.sort((a, b) => {
