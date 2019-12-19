@@ -198,7 +198,12 @@ const data = [
   {
     word: 'Optimistic',
     meaning: 'He is hopeful and confident about the future.'
-  }
+  },
+  {
+    word: 'Reserved',
+    meaning: 'He is slow to reveal emotion or opinions.'
+  },
+  
 ];
 
 const sorted = data.sort((a, b) => {
