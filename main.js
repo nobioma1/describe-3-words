@@ -80,22 +80,26 @@ function getWords() {
   // create a copy of the savedWords array
   const newWords = savedWords.concat();
 
+  // create an hashtable of the newWords
+  let wordsTable = {};
+  newWords.forEach(e => {
+    if (e && e.word) {
+      wordsTable[e.word] = e;
+    }
+  });
+
   // loop through newWords array and generate data to fill empty positions
   for (let i = 0; i < newWords.length; i++) {
     if (!newWords[i]) {
-      let wordsTable = {};
-      newWords.forEach(e => {
-        if (e && e.word) {
-          wordsTable[e.word] = e;
-        }
-      });
       let dataGenerated = data[generateRand(len)];
-      
       // if data  generated is already in view generate another
       while (wordsTable[dataGenerated.word]) {
+        // uncomment the next comment to see how we captured words that wants to appear twice
+        // console.log("I caught you ", wordsTable[dataGenerated.word]);
         dataGenerated = data[generateRand(len)];
       }
       newWords[i] = dataGenerated;
+      wordsTable[newWords[i].word] = newWords
     }
   }
 
