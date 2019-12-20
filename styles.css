@@ -60,6 +60,14 @@ button:hover {
   background-color: cyan
 }
 
+.saved ~ button {
+  background-color: cyan;
+}
+
+.saved:after {
+  content: " 🔒"
+}
+
 .main > .btn {
   width: 350px;
   display: flex;
