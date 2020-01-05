@@ -207,6 +207,18 @@ const data = [
     word: 'Audacious',
     meaning: 'He shows willingness to take suprisingly bold risks.'
   },
+  {
+    word: 'Guarded',
+    meaning: 'She is cautious and has possible reservations.'
+  },
+  {
+    word: 'Hot-headed',
+    meaning: 'He has an impetuous or quick-tempered nature.'
+  },
+  {
+    word: 'Impatient',
+    meaning: 'She has or shows a tendency to be quickly irritated or provoked.'
+  },
 ];
 
 const sorted = data.sort((a, b) => {
