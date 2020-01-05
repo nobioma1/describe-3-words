@@ -203,7 +203,10 @@ const data = [
     word: 'Reserved',
     meaning: 'He is slow to reveal emotion or opinions.'
   },
-  
+  {
+    word: 'Audacious',
+    meaning: 'He shows willingness to take suprisingly bold risks.'
+  },
 ];
 
 const sorted = data.sort((a, b) => {
