@@ -203,7 +203,50 @@ const data = [
     word: 'Reserved',
     meaning: 'He is slow to reveal emotion or opinions.'
   },
-  
+  {
+    word: 'Audacious',
+    meaning: 'He shows willingness to take suprisingly bold risks.'
+  },
+  {
+    word: 'Guarded',
+    meaning: 'She is cautious and has possible reservations.'
+  },
+  {
+    word: 'Hot-headed',
+    meaning: 'He has an impetuous or quick-tempered nature.'
+  },
+  {
+    word: 'Impatient',
+    meaning: 'She has or shows a tendency to be quickly irritated or provoked.'
+  },
+  {
+    word: 'Inactive',
+    meaning: 'He does not engage or involve in any team activities.'
+  },
+  {
+    word: 'Meticulous',
+    meaning: 'She shows great attention to detail; very careful and precise.'
+  },
+  {
+    word: 'Naive',
+    meaning: 'He shows lack of experience, wisdom, or judgement.'
+  },
+  {
+    word: 'Nosy',
+    meaning: 'She shows too much curiosity about other people\'s affairs.'
+  },
+  {
+    word: 'Punctual',
+    meaning: 'He does something at the agreed or proper time'
+  },
+  {
+    word: 'Unreliable',
+    meaning: 'She\'s not able to be relied upon.'
+  },
+  {
+    word: 'Zealous',
+    meaning: 'He has or shows zeal.'
+  },
 ];
 
 const sorted = data.sort((a, b) => {
