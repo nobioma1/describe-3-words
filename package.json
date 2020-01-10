@@ -1,0 +1,21 @@
+{
+  "name": "describe-3-words",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nobioma1/describe-3-words.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nobioma1/describe-3-words/issues"
+  },
+  "homepage": "https://github.com/nobioma1/describe-3-words#readme"
+}
